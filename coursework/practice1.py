@@ -15,6 +15,9 @@ from pymongo import MongoClient
 from utils import setup, drop
 
 # Run setup
+""" These are the documents that have been inserted for pratice. Use this 
+as reference for completing this practice
+"""
 setup(
     [
         {"name": "Alice", "age": 30},
@@ -25,7 +28,8 @@ setup(
 
 # TODO: Connect to the local MongoDB server
 
-# TODO: Select a database and collection
+# TODO: Select a database called "practice_db" and 
+# TODO:     collection called "practice_collection"
 
 # PROBLEM 1
 # TODO: Using the selected collections and databases, get ONE document that 
@@ -35,6 +39,7 @@ res =
 # Check user's input
 if not res["name"] == "Bob":
     print("Problem 1 is incorrect")
+    exit() 
 
 
 # PROBLEM 2
@@ -45,6 +50,7 @@ res =
 # Check user's input
 if not res["age"] == 35:
     print("Problem 2 is incorrect")
+    exit() 
     
 # Print the medal!
 print("Practice 1 Complete! \n")
