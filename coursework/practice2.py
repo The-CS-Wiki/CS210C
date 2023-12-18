@@ -2,8 +2,8 @@
 #  Author: Benjamin Herrera
 #
 #  CS210C // Basics of MongoDB
-#  Chapter 1: Terminologies and Pymongo
-#  Practice 1, Pymongo
+#  Chapter 2: Insert and Find
+#  Practice 2, Insert and Find
 #
 
 """ You are tasked to complete the TODO's of this practice file. Fill out the
@@ -95,8 +95,9 @@ try:
     }:
         print("Problem 1 is incorrect")
         exit()
-except Exception:
-    print("Problem 2 is incorrect")
+except Exception as e:
+    print("Problem 3 is incorrect")
+    print(e)
     exit()
 
 
@@ -114,8 +115,9 @@ try:
         if i["product_id"] not in ["P1001", "P1002"]:
             print("Problem 2 is incorrect")
             exit()
-except Exception:
-    print("Problem 2 is incorrect")
+except Exception as e:
+    print("Problem 3 is incorrect")
+    print(e)
     exit()
 
 
